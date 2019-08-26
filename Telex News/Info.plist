@@ -30,6 +30,10 @@
 	<string>NSApplication</string>
 	<key>NSSupportsAutomaticTermination</key>
 	<true/>
+	<key>NSUserNotificationAlertStyle</key>
+	<string>alert</string>
+	<key>LSUIElement</key>
+	<true/>
 	<key>NSSupportsSuddenTermination</key>
 	<true/>
 </dict>
