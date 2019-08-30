@@ -47,12 +47,25 @@
                                 <action selector="aboutTelex:" target="XfG-lQ-9wD" id="cfb-df-VnL"/>
                             </connections>
                         </menuItem>
+                        <menuItem isSeparatorItem="YES" id="ZrS-kf-f1S"/>
+                        <menuItem title="Open ..." id="bc8-93-3jC">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="openMainWindow:" target="XfG-lQ-9wD" id="m6d-OI-pcG"/>
+                            </connections>
+                        </menuItem>
                         <menuItem title="Preferences ..." id="KfM-HH-EHo">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
                                 <action selector="showPreferences:" target="XfG-lQ-9wD" id="L3X-uB-Bs8"/>
                             </connections>
                         </menuItem>
+                        <menuItem title="Preferences (Debug) ..." alternate="YES" id="POp-tg-xce">
+                            <connections>
+                                <action selector="showPreferencesWithConsole:" target="XfG-lQ-9wD" id="S0Z-Ys-OTd"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="BD7-yn-9sD"/>
                         <menuItem title="Quit Telex" id="ldB-V0-k5C">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
@@ -62,7 +75,7 @@
                     </items>
                 </menu>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="696"/>
         </scene>
     </scenes>
 </document>

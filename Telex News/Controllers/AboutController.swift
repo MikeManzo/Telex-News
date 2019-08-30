@@ -21,13 +21,6 @@ class AboutController: NSViewController {
 
     /// Custom variables
     let tableViewData = [
-        ["copyrightName": "Preferences: Flexible User Preferences",
-         "copyrightType": "Library",
-         "copyrightImage": "swift package.png",
-         "copyrightHolder": "Sindre Sorhus",
-         "copyrightURL": "https://github.com/sindresorhus/Preferences",
-         "isInvertable": "yes",
-        ],
         ["copyrightName": "Delivery Package free icon",
          "copyrightType": "Swift Package",
          "copyrightImage": "swift package.png",
@@ -35,11 +28,32 @@ class AboutController: NSViewController {
          "copyrightURL": "https://www.flaticon.com/free-icon/delivery-package_45936#term=package&page=1&position=72",
          "isInvertable": "yes",
         ],
+        ["copyrightName": "Console Log Icon",
+         "copyrightType": "Icon",
+         "copyrightImage": "console.png",
+         "copyrightHolder": "Kiranshastry",
+         "copyrightURL": "https://www.flaticon.com/authors/kiranshastry/",
+         "isInvertable": "no",
+        ],
         ["copyrightName": "Global Service free icon",
-         "copyrightType": "Swift Package",
+         "copyrightType": "Icon",
          "copyrightImage": "Worldwide.png",
          "copyrightHolder": "FreePick",
          "copyrightURL": "https://www.flaticon.com/free-icon/global-service_74524#term=Global&page=3&position=30",
+         "isInvertable": "yes",
+        ],
+        ["copyrightName": "Notifcation free icon",
+         "copyrightType": "Icon",
+         "copyrightImage": "Notification.png",
+         "copyrightHolder": "Smashicons",
+         "copyrightURL": "https://www.flaticon.com/free-icon/notification_660664",
+         "isInvertable": "no",
+        ],
+        ["copyrightName": "Preferences: Flexible User Preferences",
+         "copyrightType": "Swift Package",
+         "copyrightImage": "swift package.png",
+         "copyrightHolder": "Sindre Sorhus",
+         "copyrightURL": "https://github.com/sindresorhus/Preferences",
          "isInvertable": "yes",
         ],
     ]
@@ -50,7 +64,7 @@ class AboutController: NSViewController {
 
         // Extract info from the pList and populate the stubs in the About.xib file
         if let appInfo = Bundle.main.infoDictionary {
-            copyright.stringValue       = "Telex makes use of the following third party copyrighted material"
+            copyright.stringValue       = "Telex News makes use of the following third party copyrighted material"                      // Make sure we provide attribution
             appName.stringValue         = appInfo["CFBundleName"] as? String ?? "Error"                                                 // Add App Name from pList
             appCopyright.stringValue    = appInfo["NSHumanReadableCopyright"] as? String ?? "Error"                                     // Add Copyright
             appVersion.stringValue      = "Version: " + Bundle.applicationVersionNumber + "(" + Bundle.applicationBuildNumber + ")"     // Add Version

@@ -10,6 +10,9 @@ import Cocoa
 
 extension NSAppearance {
     /// Check whether we have a vibrant view (dark or light)
+    ///
+    /// - Returns: True if we are in Vibrant  Mode (Dark or light)
+    ///
     static func isVibrant() -> Bool? {
         var isVibrant = false
 
@@ -24,6 +27,9 @@ extension NSAppearance {
     }
 
     /// Check whether we are in dark mode
+    ///
+    /// - Returns: True if we are in Dark  Mode
+    ///
     static func isDark() -> Bool? {
         var isDark = false
 

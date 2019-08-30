@@ -9,15 +9,51 @@
 import Cocoa
 import Preferences
 import SwiftyBeaver
+import SwiftyUserDefaults
 
-/// The only globals we're going to use
+/// The only global we're going to use
 let log = QuantumLogger.self
-/// The only globals we're going to use
+/// The only global we're going to use
+
+/// User Defaults
+extension DefaultsKeys {
+    static let telexDefaults  = DefaultsKey<TelexPreferences?>("TelexDefaults")
+}
+/// User Defaults
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
+// MARK: - Custom Properties
+    var appDefaults = Defaults[.telexDefaults]
 
+// MARK: - Overrides
+    override init() {
+        if appDefaults == nil {
+            appDefaults = TelexPreferences()
+            Defaults[.telexDefaults] = appDefaults
+        }
+    }
+
+// MARK: Framework Methoda
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        addDabataseLogging()
+    }
+
+    func applicationWillTerminate(_ aNotification: Notification) {
+        updateDefaults()
+    }
+}
+
+extension AppDelegate {
+    /// Save the entire app's configuration to user defaults
+    ///
+    func updateDefaults() {
+        Defaults[.telexDefaults]  = appDefaults
+    }
+    
+    /// Start logging and save to a mysql lite database
+    ///
+    private func addDabataseLogging() {
         // SwiftyBeaver Config
         let console         = ConsoleDestination()
         console.format      = "$DHH:mm:ss.SSS$d $C$L$c $N.$F:$l - $M"
@@ -32,8 +68,24 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         // SwiftyBeaver Config
     }
-
-    func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
+    
+    ///
+    /// Get the DB logger (if one exists)
+    ///
+    /// - Returns: the DBDestination object
+    ///
+    func getDBLogger() -> SQLDestination? {
+        var dbDestination: SQLDestination?
+        
+        for aDestination in log.destinations {
+            switch aDestination {
+            case is SQLDestination:
+                dbDestination = aDestination as? SQLDestination
+            default:
+                break
+            }
+        }
+        
+        return dbDestination
     }
 }

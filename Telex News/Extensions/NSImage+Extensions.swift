@@ -10,6 +10,10 @@ import Cocoa
 import Foundation
 
 extension NSImage {
+    /// Static helper function to invert an image if we are in Dark Mode
+    ///
+    /// - Returns: *new* NSImage if we have inverted the original
+    ///
     static func smartInvert(asset: String) -> NSImage? {
         guard let image = NSImage(named: asset) else {
             return nil
@@ -21,6 +25,10 @@ extension NSImage {
         }
     }
 
+    ///  Helper function to invert an image if we are in Dark Mode
+    ///
+    /// - Returns: *new* NSImage if we have inverted the original
+    ///
     func smartInvert() -> NSImage? {
         if NSApplication.isDark() {
             return filter(filter: "CIColorInvert")
@@ -29,6 +37,10 @@ extension NSImage {
         }
     }
 
+    /// Filter a valid image
+    ///
+    /// - Returns: *new* NSImage if filter was successful
+    ///
     func filter(filter: String) -> NSImage? {
         let image = CIImage(data: (self.tiffRepresentation!))
 
@@ -52,7 +64,11 @@ extension NSImage {
             }
     }
 
-    func resized(to newSize: NSSize) -> NSImage? {
+    /// Hhelper function to resize an image if we are in Dark Mode
+    ///
+    /// - Returns: *new* NSImage if we have resized the original
+    ///
+    func resize(to newSize: NSSize) -> NSImage? {
         if let bitmapRep = NSBitmapImageRep(
             bitmapDataPlanes: nil, pixelsWide: Int(newSize.width), pixelsHigh: Int(newSize.height),
             bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false,

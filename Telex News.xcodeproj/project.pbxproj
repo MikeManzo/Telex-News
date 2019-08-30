@@ -30,6 +30,20 @@
 		2776347B231308E600622D64 /* Telex-512-BW.png in Resources */ = {isa = PBXBuildFile; fileRef = 2776347A231308E600622D64 /* Telex-512-BW.png */; };
 		277634812313149F00622D64 /* Worldwide.png in Resources */ = {isa = PBXBuildFile; fileRef = 277634802313149F00622D64 /* Worldwide.png */; };
 		277634832313384B00622D64 /* QJQuickResponseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277634822313384B00622D64 /* QJQuickResponseTableView.swift */; };
+		27E5C24223142A5500FDAD5B /* GeneralPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E5C24023142A5500FDAD5B /* GeneralPreferences.swift */; };
+		27E5C24323142A5500FDAD5B /* GeneralPreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27E5C24123142A5500FDAD5B /* GeneralPreferences.xib */; };
+		27E5C24623142A8F00FDAD5B /* DisplayPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E5C24423142A8F00FDAD5B /* DisplayPreferences.swift */; };
+		27E5C24723142A8F00FDAD5B /* DisplayPreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27E5C24523142A8F00FDAD5B /* DisplayPreferences.xib */; };
+		27E5C24A23142AB200FDAD5B /* NotificationPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E5C24823142AB200FDAD5B /* NotificationPreferences.swift */; };
+		27F0E01C231718CC0094831C /* SwiftyUserDefaults in Frameworks */ = {isa = PBXBuildFile; productRef = 27F0E01B231718CC0094831C /* SwiftyUserDefaults */; };
+		27F0E01E2317195B0094831C /* TelexPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F0E01D2317195B0094831C /* TelexPreferences.swift */; };
+		27F0E02023171BC60094831C /* ConsoleLogPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F0E01F23171BC60094831C /* ConsoleLogPreferences.swift */; };
+		27F0E02323171CC50094831C /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 27F0E02223171CC50094831C /* SwiftDate */; };
+		27F0E02523171D030094831C /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F0E02423171D030094831C /* Date+Extensions.swift */; };
+		27F0E027231723710094831C /* Notification.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F0E026231723710094831C /* Notification.png */; };
+		27F0E02B2317247E0094831C /* console.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F0E02A2317247E0094831C /* console.png */; };
+		27F0E02D231724A40094831C /* ConsoleLogPreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27F0E02C231724A40094831C /* ConsoleLogPreferences.xib */; };
+		27F0E02F231724C00094831C /* NotificationPreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27F0E02E231724C00094831C /* NotificationPreferences.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +90,18 @@
 		2776347A231308E600622D64 /* Telex-512-BW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Telex-512-BW.png"; sourceTree = "<group>"; };
 		277634802313149F00622D64 /* Worldwide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Worldwide.png; sourceTree = "<group>"; };
 		277634822313384B00622D64 /* QJQuickResponseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QJQuickResponseTableView.swift; sourceTree = "<group>"; };
+		27E5C24023142A5500FDAD5B /* GeneralPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPreferences.swift; sourceTree = "<group>"; };
+		27E5C24123142A5500FDAD5B /* GeneralPreferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralPreferences.xib; sourceTree = "<group>"; };
+		27E5C24423142A8F00FDAD5B /* DisplayPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayPreferences.swift; sourceTree = "<group>"; };
+		27E5C24523142A8F00FDAD5B /* DisplayPreferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisplayPreferences.xib; sourceTree = "<group>"; };
+		27E5C24823142AB200FDAD5B /* NotificationPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPreferences.swift; sourceTree = "<group>"; };
+		27F0E01D2317195B0094831C /* TelexPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelexPreferences.swift; sourceTree = "<group>"; };
+		27F0E01F23171BC60094831C /* ConsoleLogPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleLogPreferences.swift; sourceTree = "<group>"; };
+		27F0E02423171D030094831C /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		27F0E026231723710094831C /* Notification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Notification.png; sourceTree = "<group>"; };
+		27F0E02A2317247E0094831C /* console.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = console.png; sourceTree = "<group>"; };
+		27F0E02C231724A40094831C /* ConsoleLogPreferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsoleLogPreferences.xib; sourceTree = "<group>"; };
+		27F0E02E231724C00094831C /* NotificationPreferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationPreferences.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +111,9 @@
 			files = (
 				2776344F23119B2800622D64 /* FeedKit in Frameworks */,
 				2776345223119B3A00622D64 /* Preferences in Frameworks */,
+				27F0E02323171CC50094831C /* SwiftDate in Frameworks */,
 				2776345523119B8E00622D64 /* SwiftyBeaver in Frameworks */,
+				27F0E01C231718CC0094831C /* SwiftyUserDefaults in Frameworks */,
 				2776345823119BE000622D64 /* GRDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,6 +193,7 @@
 		2776345E2311ABE400622D64 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				27F0E01D2317195B0094831C /* TelexPreferences.swift */,
 				2776346D2311B04100622D64 /* QuantumLogger.swift */,
 			);
 			path = Models;
@@ -173,6 +202,7 @@
 		2776345F2311ABEC00622D64 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				27E5C23E23142A0F00FDAD5B /* Preferences */,
 				277634772311BEF600622D64 /* Graphics */,
 				2776342723119AF800622D64 /* Main.storyboard */,
 				277634632311AC9600622D64 /* About.xib */,
@@ -183,6 +213,7 @@
 		277634602311ABF200622D64 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				27E5C23F23142A2400FDAD5B /* Preferences */,
 				2776342323119AF600622D64 /* MainViewController.swift */,
 				277634612311AC4E00622D64 /* AboutController.swift */,
 			);
@@ -202,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				277634692311AEB600622D64 /* Bundle+Extensions.swift */,
+				27F0E02423171D030094831C /* Date+Extensions.swift */,
 				277634702311B27700622D64 /* NSApperance+Extensions.swift */,
 				277634722311B49C00622D64 /* NSApplication+Extensions.swift */,
 				277634742311B5DB00622D64 /* NSImage+Extensions.swift */,
@@ -220,11 +252,35 @@
 		277634772311BEF600622D64 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				277634802313149F00622D64 /* Worldwide.png */,
-				2776347A231308E600622D64 /* Telex-512-BW.png */,
+				27F0E02A2317247E0094831C /* console.png */,
+				27F0E026231723710094831C /* Notification.png */,
 				277634782311C42800622D64 /* swift package.png */,
+				2776347A231308E600622D64 /* Telex-512-BW.png */,
+				277634802313149F00622D64 /* Worldwide.png */,
 			);
 			path = Graphics;
+			sourceTree = "<group>";
+		};
+		27E5C23E23142A0F00FDAD5B /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				27F0E02C231724A40094831C /* ConsoleLogPreferences.xib */,
+				27E5C24523142A8F00FDAD5B /* DisplayPreferences.xib */,
+				27E5C24123142A5500FDAD5B /* GeneralPreferences.xib */,
+				27F0E02E231724C00094831C /* NotificationPreferences.xib */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		27E5C23F23142A2400FDAD5B /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				27F0E01F23171BC60094831C /* ConsoleLogPreferences.swift */,
+				27E5C24423142A8F00FDAD5B /* DisplayPreferences.swift */,
+				27E5C24023142A5500FDAD5B /* GeneralPreferences.swift */,
+				27E5C24823142AB200FDAD5B /* NotificationPreferences.swift */,
+			);
+			path = Preferences;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +305,8 @@
 				2776345123119B3A00622D64 /* Preferences */,
 				2776345423119B8E00622D64 /* SwiftyBeaver */,
 				2776345723119BE000622D64 /* GRDB */,
+				27F0E01B231718CC0094831C /* SwiftyUserDefaults */,
+				27F0E02223171CC50094831C /* SwiftDate */,
 			);
 			productName = "Telex News";
 			productReference = 2776341E23119AF600622D64 /* Telex News.app */;
@@ -327,6 +385,8 @@
 				2776345023119B3A00622D64 /* XCRemoteSwiftPackageReference "Preferences" */,
 				2776345323119B8E00622D64 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */,
 				2776345623119BE000622D64 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+				27F0E01A231718CC0094831C /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */,
+				27F0E02123171CC50094831C /* XCRemoteSwiftPackageReference "SwiftDate" */,
 			);
 			productRefGroup = 2776341F23119AF600622D64 /* Products */;
 			projectDirPath = "";
@@ -347,10 +407,16 @@
 				2776345B23119E0700622D64 /* .swiftlint.yml in Resources */,
 				277634642311AC9600622D64 /* About.xib in Resources */,
 				2776342623119AF800622D64 /* Assets.xcassets in Resources */,
+				27E5C24723142A8F00FDAD5B /* DisplayPreferences.xib in Resources */,
+				27F0E02D231724A40094831C /* ConsoleLogPreferences.xib in Resources */,
 				2776342923119AF800622D64 /* Main.storyboard in Resources */,
 				277634812313149F00622D64 /* Worldwide.png in Resources */,
 				2776347B231308E600622D64 /* Telex-512-BW.png in Resources */,
+				27F0E027231723710094831C /* Notification.png in Resources */,
+				27F0E02B2317247E0094831C /* console.png in Resources */,
 				277634792311C42800622D64 /* swift package.png in Resources */,
+				27F0E02F231724C00094831C /* NotificationPreferences.xib in Resources */,
+				27E5C24323142A5500FDAD5B /* GeneralPreferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,13 +464,19 @@
 				277634712311B27700622D64 /* NSApperance+Extensions.swift in Sources */,
 				277634752311B5DB00622D64 /* NSImage+Extensions.swift in Sources */,
 				277634732311B49C00622D64 /* NSApplication+Extensions.swift in Sources */,
+				27F0E01E2317195B0094831C /* TelexPreferences.swift in Sources */,
 				2776342423119AF600622D64 /* MainViewController.swift in Sources */,
 				2776346E2311B04100622D64 /* QuantumLogger.swift in Sources */,
 				277634832313384B00622D64 /* QJQuickResponseTableView.swift in Sources */,
 				2776346A2311AEB600622D64 /* Bundle+Extensions.swift in Sources */,
+				27E5C24623142A8F00FDAD5B /* DisplayPreferences.swift in Sources */,
+				27F0E02523171D030094831C /* Date+Extensions.swift in Sources */,
 				277634672311AD2000622D64 /* QJHyperTextField.swift in Sources */,
 				2776342223119AF600622D64 /* AppDelegate.swift in Sources */,
 				277634622311AC4E00622D64 /* AboutController.swift in Sources */,
+				27E5C24223142A5500FDAD5B /* GeneralPreferences.swift in Sources */,
+				27F0E02023171BC60094831C /* ConsoleLogPreferences.swift in Sources */,
+				27E5C24A23142AB200FDAD5B /* NotificationPreferences.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -766,6 +838,22 @@
 				minimumVersion = 4.2.1;
 			};
 		};
+		27F0E01A231718CC0094831C /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/radex/SwiftyUserDefaults";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		27F0E02123171CC50094831C /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftDate";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -788,6 +876,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2776345623119BE000622D64 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
 			productName = GRDB;
+		};
+		27F0E01B231718CC0094831C /* SwiftyUserDefaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27F0E01A231718CC0094831C /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */;
+			productName = SwiftyUserDefaults;
+		};
+		27F0E02223171CC50094831C /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27F0E02123171CC50094831C /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
